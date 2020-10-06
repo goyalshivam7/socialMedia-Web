@@ -1,0 +1,23 @@
+/* oswald for buttons --------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* navbar fonts--------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* footer font --------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+.nav-style {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+}
