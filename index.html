@@ -11,10 +11,18 @@
 
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/home.css">
-    <link rel="stylesheet" href="style/card.css">
 
 
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-remote-config.js"></script>
+
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -54,21 +62,18 @@
 
     <div class="bg-light">
         <div class="container-fluid row">
-            <form class="form-inline pt-3 pb-2">
-                <div class="form-group mx-4 mb-2">
-                    <div class="row">
-                        <div class="col-md-6 col-5">
-                            <label for="input" class="sr-only">Search</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Search">
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <button type="submit" class="btn btn-primary mb-2">Search</button>
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <button type="submit" class="btn btn-primary mb-2 mx-5">Post</button>
-                        </div>
+            <div class="col-md-6 col-6">
+                <div class="form-inline pt-3 pb-2">
+                    <div class="form-group mx-4 mb-2">
+                        <label for="input" class="sr-only">Search</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Search">
+                        <button type="submit" class="btn btn-primary mx-3 mb-2">Search</button>
                     </div>
-            </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 py-3">
+                <input type="file" id="photo">
+                <button type="submit" id="uploadPhoto" class="btn btn-primary mb-2 mx-5">Post</button>
             </div>
         </div>
     </div>
@@ -86,7 +91,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h5 class="card-title">Shivam goyal</h5>
-                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. The graph here obtained ...
+                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. ...
                                     </p>
                                     <a href="#" class="btn btn-primary">Comment</a>
                                 </div>
@@ -101,7 +106,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h5 class="card-title">Shivam goyal</h5>
-                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. The graph here obtained ...
+                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. ...
                                     </p>
                                     <a href="#" class="btn btn-primary">Comment</a>
                                 </div>
@@ -116,7 +121,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h5 class="card-title">Shivam goyal</h5>
-                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. The graph here obtained ...
+                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. ...
                                     </p>
                                     <a href="#" class="btn btn-primary">Comment</a>
                                 </div>
@@ -131,7 +136,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h5 class="card-title">Shivam goyal</h5>
-                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. The graph here obtained ...
+                                    <p class="card-text"> This classification is based on k-means Clustering, here I have differentiates the data into five clusters which were obtained from the elbow method. ...
                                     </p>
                                     <a href="#" class="btn btn-primary">Comment</a>
                                 </div>
@@ -241,7 +246,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons " rel="stylesheet ">
+    <script src="storage.js"></script>
 
 
 </body>
