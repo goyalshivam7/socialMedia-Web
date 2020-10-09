@@ -11,5 +11,7 @@ $("#uploadPhoto").click(function() {
         .then(function(downloadURL) {
             console.log(downloadURL);
             alert("image uploaded");
+            var image = document.getElementById("displayImage");
+            image.src = downloadURL;
         });
 });
